@@ -1,0 +1,246 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fffbea; /* Soft cream background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #004d40, #00695c);
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 77, 64, 0.7), rgba(0, 77, 64, 0.6)), 
+                url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.cta-button {
+    background-color: #ffcc00;
+    color: #004d40;
+    padding: 14px 35px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(255,204,0,0.5);
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Services List */
+.key-services {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-left: 6px solid #ffcc00;
+}
+
+.key-services h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #004d40;
+}
+
+.key-services ul {
+    list-style: square inside;
+    column-count: 2;
+    column-gap: 40px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Specialized Services */
+.our-services {
+    max-width: 1000px;
+    margin: 40px auto 60px;
+    padding: 30px;
+    background: linear-gradient(to right, #e0f7f5, #ffffff);
+    border-radius: 10px;
+}
+
+.our-services h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #004d40;
+}
+
+.service-item {
+    background-color: #ffffff;
+    margin: 15px 0;
+    padding: 15px 20px;
+    border-left: 6px solid #ffcc00;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: background-color 0.3s ease;
+}
+
+.service-item:hover {
+    background-color: #f9f9f9;
+}
+
+.service-item h3 {
+    color: #00796b;
+    margin-bottom: 8px;
+}
+
+.service-item p {
+    color: #555;
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(37,211,102,0.6);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe57;
+}
+
+/* Contact Section */
+.contact-section {
+    max-width: 700px;
+    margin: 50px auto 80px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    color: #333;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004d40;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.contact-section a {
+    color: #004d40;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+/* Map container */
+.map-container {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #004d40, #00695c);
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ffeb3b;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .key-services ul {
+        column-count: 1;
+    }
+}
